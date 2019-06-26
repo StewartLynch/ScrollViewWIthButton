@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB32000C22C308580029B7FF /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32000B22C308580029B7FF /* ScrollViewController.swift */; };
+		BB32000E22C309DB0029B7FF /* ScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32000D22C309DB0029B7FF /* ScrollContentView.swift */; };
 		BB5AE47D22C305F900D6E0AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5AE47C22C305F900D6E0AF /* AppDelegate.swift */; };
 		BB5AE47F22C305F900D6E0AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5AE47E22C305F900D6E0AF /* ViewController.swift */; };
-		BB5AE48222C305F900D6E0AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5AE48022C305F900D6E0AF /* Main.storyboard */; };
 		BB5AE48422C305FB00D6E0AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5AE48322C305FB00D6E0AF /* Assets.xcassets */; };
 		BB5AE48722C305FB00D6E0AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5AE48522C305FB00D6E0AF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB32000B22C308580029B7FF /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		BB32000D22C309DB0029B7FF /* ScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollContentView.swift; sourceTree = "<group>"; };
 		BB5AE47922C305F900D6E0AF /* ScrollViewWIthButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewWIthButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5AE47C22C305F900D6E0AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB5AE47E22C305F900D6E0AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BB5AE48122C305F900D6E0AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB5AE48322C305FB00D6E0AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB5AE48622C305FB00D6E0AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB5AE48822C305FB00D6E0AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +58,8 @@
 			children = (
 				BB5AE47C22C305F900D6E0AF /* AppDelegate.swift */,
 				BB5AE47E22C305F900D6E0AF /* ViewController.swift */,
-				BB5AE48022C305F900D6E0AF /* Main.storyboard */,
+				BB32000B22C308580029B7FF /* ScrollViewController.swift */,
+				BB32000D22C309DB0029B7FF /* ScrollContentView.swift */,
 				BB5AE48322C305FB00D6E0AF /* Assets.xcassets */,
 				BB5AE48522C305FB00D6E0AF /* LaunchScreen.storyboard */,
 				BB5AE48822C305FB00D6E0AF /* Info.plist */,
@@ -124,7 +127,6 @@
 			files = (
 				BB5AE48722C305FB00D6E0AF /* LaunchScreen.storyboard in Resources */,
 				BB5AE48422C305FB00D6E0AF /* Assets.xcassets in Resources */,
-				BB5AE48222C305F900D6E0AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB5AE47F22C305F900D6E0AF /* ViewController.swift in Sources */,
+				BB32000E22C309DB0029B7FF /* ScrollContentView.swift in Sources */,
+				BB32000C22C308580029B7FF /* ScrollViewController.swift in Sources */,
 				BB5AE47D22C305F900D6E0AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BB5AE48022C305F900D6E0AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB5AE48122C305F900D6E0AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BB5AE48522C305FB00D6E0AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
