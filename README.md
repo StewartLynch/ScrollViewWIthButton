@@ -14,7 +14,7 @@ I thought that I had it somewhat resolved when I added the following to the UIVi
 ```swift
 override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
 	for subview in self.subviews as [UIView] {
-		if !subview.isHidden && subview.alpha > 0 && 		subview.isUserInteractionEnabled && subview.point(inside:point, with: event) {
+		if !subview.isHidden && subview.alpha > 0 && subview.isUserInteractionEnabled && subview.point(inside:point, with: event) {
 			return true
 		}
 	}
