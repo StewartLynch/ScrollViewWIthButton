@@ -42,8 +42,19 @@ class ScrollContentView: UIView {
         actionButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         actionButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         actionButton.addTarget(self, action: #selector(closeHelp), for: .touchUpInside)
+
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        actionButton.addGestureRecognizer(singleTap)
     }
-    
+
+    @objc func handleTap(_ recognizer: UITapGestureRecognizer) {
+        // Add here custom animation
+        UIView.animate(withDuration: 0.2, animations: {
+            self.actionButton.backgroundColor = .gray
+        }, completion: { _ in
+            self.actionButton.sendActions(for: .touchUpInside)
+        })
+    }
     
     // Note:  If I uncomment this function, the tap passes through to the button in portrait mode, but NOT in landscape mode
     
@@ -58,7 +69,12 @@ class ScrollContentView: UIView {
     }
 
 */
-    
+    // You were missing converting point to a view coordinate system
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        return subviews.contains(where: {
+            !$0.isHidden && $0.point(inside: self.convert(point, to: $0), with: event)
+        })
+    }
     
     @objc func closeHelp() {
         print("tapped")
