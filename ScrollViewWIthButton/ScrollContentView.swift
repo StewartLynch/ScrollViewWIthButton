@@ -47,18 +47,17 @@ class ScrollContentView: UIView {
     
     // Note:  If I uncomment this function, the tap passes through to the button in portrait mode, but NOT in landscape mode
     
-    /*
+/*
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         for subview in self.subviews as [UIView] {
             if !subview.isHidden && subview.alpha > 0 && subview.isUserInteractionEnabled && subview.point(inside:point, with: event) {
                 return true
             }
         }
-
         return false
     }
- */
-    
+
+*/
     
     
     @objc func closeHelp() {
