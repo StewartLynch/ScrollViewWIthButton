@@ -7,6 +7,8 @@ The content of that scrollview is a series of UIViews and on each is a UIButton.
 
 The problem I am having is that **no tap event reaches the Button**.
 
+**Note:**  There is no storyboard or Xib involved.  If I use a storyboard and xib file for my view, it works.
+
 I thought that I had it somewhat resolved when I added the following to the UIView that is used for the scrollview.
 
 ```swift
